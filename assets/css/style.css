@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-color: #131212;
+  --text-color: white;
+  --header-img-gradient: linear-gradient(
+    rgba(0, 0, 0, 0.952),
+    rgba(0, 0, 0, 0.342),
+    rgba(0, 0, 0, 0.562),
+    rgb(0, 0, 0)
+  );
+  --text-shadow: 5px 5px 8px #000000;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway";
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: var(--header-img-gradient), url("../img/cp-winter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  cursor: grab;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+  padding-top: 2em;
+  font-weight: 200;
+}
+
+header nav ul li i {
+  font-size: 1.2rem;
+  background-color: rgb(255, 255, 255);
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  padding-top: 0.2em;
+  border-radius: 50%;
+  color: var(--bg-color);
+  margin-right: 0.5em;
+}
+
+.li-flex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.li-flex button {
+  margin-right: -2.9em;
+  cursor: pointer;
+}
+.li-flex button i {
+  background-color: #05000000;
+  color: rgba(0, 0, 0, 0.432);
+  font-size: 1.1rem;
+}
+
+.li-flex form input {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  border-radius: 1.5em;
+  color: #ffffff;
+  height: 3em;
+  width: 20em;
+  padding-left: 3em;
+  transition: background-color 2s;
+}
+
+header nav ul li:hover {
+  color: rgb(25, 25, 255);
+  cursor: pointer;
+}
+
+.li-flex form input:hover {
+  background-color: rgba(255, 255, 255);
+  color: #000000;
+}
+
+div.container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+  text-shadow: var(--text-shadow);
+}
+
+div.text-container p {
+  line-height: 1.5em;
+  font-weight: 200;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  width: 50%;
+  cursor: default;
+}
+
+div.text-container div ul {
+  display: flex;
+  gap: 6em;
+  text-shadow: var(--text-shadow);
+  font-size: 0.8rem;
+  margin-bottom: 2em;
+  font-weight: 200;
+}
+
+div.text-container div ul li:first-child {
+  background-color: rgb(144, 144, 238);
+  width: 3.5em;
+  height: 1.7em;
+  padding-top: 0.3em;
+  text-align: center;
+  border-radius: 1em;
+  font-weight: 500;
+}
+
+div.text-container div ul li a {
+  margin-right: 1em;
+  font-weight: 600;
+}
+
+main div {
+  height: 100vh;
+}
