@@ -42,7 +42,7 @@ header nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 2em;
+  gap: 2.5em;
   padding-top: 2em;
   font-weight: 200;
 }
@@ -160,15 +160,13 @@ div.text-container div ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2em;
-  width: 30%;
-  height: 10vh;
+  gap: 0.5em;
+  width: 25%;
+  height: 15vh;
 }
 
 .flex-button div {
   font-weight: 100;
-  height: 6vh;
-  width: 20vw;
   padding-top: 1.5vh;
   text-align: center;
   background-color: #13121200;
@@ -178,10 +176,6 @@ div.text-container div ul li a {
 .flex-button div i {
   padding-right: 0.5em;
   color: blue;
-}
-
-main div {
-  height: 100vh;
 }
 
 .flex-container {
@@ -208,4 +202,65 @@ div.flex-container span {
 }
 div.flex-container span i {
   margin-right: 0.5em;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.movies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1.5em;
+  width: 16%;
+  height: 64vh;
+  cursor: pointer;
+}
+
+.img-card {
+  border-radius: 5px;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.image-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.movies-container p {
+  font-weight: 600;
+  margin-top: -1em;
+}
+.movies-container span {
+  font-weight: 100;
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-top: -0.5em;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.info-container i {
+  font-size: 0.2rem;
+  opacity: 0.5;
+  padding: 0em 2em;
+}
+
+.info-container span:last-child {
+  font-size: 0.6em;
+  border: white solid 1px;
+  padding: 0.2em 0.2em;
+  border-radius: 3px;
 }
