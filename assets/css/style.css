@@ -43,16 +43,21 @@ header nav ul {
   justify-content: flex-end;
   align-items: center;
   gap: 2.5em;
-  padding-top: 2em;
   font-weight: 200;
 }
+.flex-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+}
 
-header nav ul li:first-child {
-  margin-right: 2em;
+.logo {
   border: white solid 1px;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 1000;
+  padding: 0em 1em;
 }
 
 header nav ul li:first-child i {
@@ -313,4 +318,11 @@ div.flex-container span i {
 }
 .flex-container-tv i {
   margin-left: 0.5em;
+}
+
+footer {
+  background-color: #150249;
+  width: 100%;
+  height: 50vh;
+  margin-top: 5em;
 }

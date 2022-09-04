@@ -19,29 +19,31 @@
   <body>
     <header>
       <nav class="container">
-        <ul>
-          <li>TodayWatch</li>
-          <li>Home</li>
-          <li>Movies</li>
-          <li>TV-Series</li>
-          <li>Streams</li>
-          <li>Top IMDb</li>
-          <li class="li-flex">
-            <form action="mydata.php" method="get" id="form-1">
-              <label for="search"></label>
-              <input
-                type="text"
-                name="serach"
-                id="search"
-                placeholder="Enter your keywords"
-              />
-            </form>
-            <button type="submit" form="form-1">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </li>
-          <li><i class="fa-solid fa-user"></i>Login/Register</li>
-        </ul>
+        <div class="flex-nav-container">
+          <div class="logo">TodayWatch</div>
+          <ul>
+            <li>Home</li>
+            <li>Movies</li>
+            <li>TV-Series</li>
+            <li>Streams</li>
+            <li>Top IMDb</li>
+            <li class="li-flex">
+              <form action="mydata.php" method="get" id="form-1">
+                <label for="search"></label>
+                <input
+                  type="text"
+                  name="serach"
+                  id="search"
+                  placeholder="Enter your keywords"
+                />
+              </form>
+              <button type="submit" form="form-1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </li>
+            <li><i class="fa-solid fa-user"></i>Login/Register</li>
+          </ul>
+        </div>
       </nav>
       <div class="container">
         <div class="text-container">
@@ -437,6 +439,8 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div>footer</div>
+    </footer>
   </body>
 </html>
