@@ -224,37 +224,46 @@ div.flex-container span i {
   transform: scale(1, 1);
   transition: transform 2s;
 }
+.movies-container:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 1s;
+  background-color: #11053d;
+  /* align-items: center; */
+  z-index: 3;
+  border: white solid 1px;
+}
 
 .img-card {
+  position: relative;
   border-radius: 5px;
   height: 50vh;
   object-fit: cover;
 }
 
-.movies-container:hover {
-  transform: scale(1.1, 1.1);
-  transition: transform 2s;
-  background-color: #11053d;
-  align-items: center;
-  z-index: 3;
-  border: white solid 1px;
+.quality {
+  position: absolute;
+  color: #ffffff;
+  right: 1em;
+  top: 0.5em;
+  padding: 0.1em 0.4em;
+  font-size: 1rem;
+  font-weight: 600;
+  border: #ffffff solid 1px;
+  background-color: #050000;
+  border-radius: 3px;
 }
 
 .image-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   gap: 1em;
 }
 
-.movies-container p {
+.image-info p {
   font-weight: 600;
-  margin-top: -4em;
-}
-.movies-container span {
-  font-weight: 100;
-  font-size: 0.9rem;
-  opacity: 0.5;
-  margin-top: -0.5em;
+  margin-top: -4.5em;
 }
 
 .info-container {
@@ -262,6 +271,12 @@ div.flex-container span i {
   justify-content: space-between;
   align-items: center;
   gap: 0.5em;
+}
+.info-container span {
+  font-weight: 100;
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-top: -0.5em;
 }
 
 .info-container i {
@@ -277,6 +292,25 @@ div.flex-container span i {
   border-radius: 3px;
 }
 
-section div.tv {
-  height: 100vh;
+.flex-container-tv {
+  display: flex;
+  width: 100%;
+  margin-top: 10em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-tv h2 {
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-right: 1em;
+}
+
+.flex-container-tv span {
+  color: blue;
+  cursor: pointer;
+}
+.flex-container-tv i {
+  margin-left: 0.5em;
 }
