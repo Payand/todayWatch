@@ -39,7 +39,7 @@ header {
     url("../img/Captain-America-The-Winter-Soldier.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 100vh;
