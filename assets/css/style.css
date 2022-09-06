@@ -355,6 +355,9 @@ footer {
 /* Resposive starts  */
 
 @media (min-width: 360px) {
+  .container {
+    width: 90%;
+  }
   header {
     background-position: center;
   }
@@ -381,7 +384,7 @@ footer {
     flex-direction: column;
     flex-wrap: nowrap;
     width: 80%;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     height: 15vh;
     gap: 0.5em;
