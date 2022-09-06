@@ -19,13 +19,13 @@
   <body>
     <!-- header starts -->
     <header>
-      <nav class="container">
+      <nav id="top" class="container">
         <div class="flex-nav-container">
           <div class="logo">TodayWatch</div>
           <ul>
             <li>Home</li>
             <li>Movies</li>
-            <li>TV-Series</li>
+            <li><a href="#tv">TV-Series</a></li>
             <li>Streams</li>
             <li>Top IMDb</li>
             <!-- search form starts -->
@@ -50,7 +50,7 @@
       </nav>
       <div class="container">
         <div class="flex-header-text-container">
-          <h1>Captain America: Civil War</h1>
+          <h1>Captain America: Winter Soldier</h1>
           <div>
             <ul>
               <li>HD</li>
@@ -66,10 +66,10 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
             dolores obcaecati optio id voluptas est eos, delectus quibusdam
           </p>
-        </div>
-        <div class="header-flex-button">
-          <div><i class="fa-solid fa-play"></i>Watch now</div>
-          <div><i class="fa-regular fa-heart"></i>Add to list</div>
+          <div class="header-flex-button">
+            <div><i class="fa-solid fa-play"></i>Watch now</div>
+            <div><i class="fa-regular fa-heart"></i>Add to list</div>
+          </div>
         </div>
       </div>
     </header>
@@ -80,9 +80,11 @@
         <div class="container">
           <div class="flex-container-title">
             <h2>Recomended</h2>
-            <span><i class="fa-solid fa-circle-play"></i>Movies</span>
-            <span><i class="fa-solid fa-lines-leaning"></i>TV Shows</span>
-            <span><i class="fa-solid fa-arrow-trend-up"></i>Trending</span>
+            <div>
+              <span><i class="fa-solid fa-circle-play"></i>Movies</span>
+              <span><i class="fa-solid fa-lines-leaning"></i>TV Shows</span>
+              <span><i class="fa-solid fa-arrow-trend-up"></i>Trending</span>
+            </div>
           </div>
         </div>
       </section>
@@ -277,7 +279,7 @@
       <section>
         <div class="container-movies">
           <div class="flex-container-tv">
-            <h2>TV-Shows</h2>
+            <h2 id="tv">TV-Shows</h2>
             <span>Show All<i class="fa-solid fa-circle-play"></i></span>
           </div>
         </div>
@@ -453,6 +455,7 @@
     <!-- footer starts  -->
     <footer>
       <div>footer</div>
+      <div class="circle"><a href="#top">circle</a></div>
     </footer>
     <!-- footer ends  -->
   </body>
