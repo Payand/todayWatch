@@ -19,11 +19,14 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
-
+/* container starts  */
 .container {
   width: 95%;
   margin: 0 auto;
 }
+/* container ends  */
+
+/* Header starts */
 
 header {
   display: flex;
@@ -45,6 +48,7 @@ header nav ul {
   gap: 2.5em;
   font-weight: 200;
 }
+
 .flex-nav-container {
   display: flex;
   justify-content: space-between;
@@ -55,7 +59,7 @@ header nav ul {
 .logo {
   border: white solid 1px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 1000;
   padding: 0em 1em;
 }
@@ -81,22 +85,22 @@ header nav ul li i {
   margin-right: 0.5em;
 }
 
-.li-flex {
+.li-search-form {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.li-flex button {
+.li-search-form button {
   margin-right: -2.9em;
   cursor: pointer;
 }
-.li-flex button i {
+.li-search-form button i {
   background-color: #05000000;
   color: rgba(0, 0, 0, 0.432);
   font-size: 1.1rem;
 }
 
-.li-flex form input {
+.li-search-form form input {
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 0.9rem;
   border-radius: 1.5em;
@@ -112,24 +116,24 @@ header nav ul li:hover {
   cursor: pointer;
 }
 
-.li-flex form input:hover {
+.li-search-form form input:hover {
   background-color: rgba(255, 255, 255);
   color: #000000;
 }
 
-div.container h1 {
+div.flex-header-text-container h1 {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 0.2em;
   text-shadow: var(--text-shadow);
 }
 
-div.text-container p {
+div.flex-header-text-container p {
   line-height: 1.5em;
   font-weight: 200;
 }
 
-.text-container {
+.flex-header-text-container {
   display: flex;
   flex-direction: column;
   height: 30vh;
@@ -137,7 +141,7 @@ div.text-container p {
   cursor: default;
 }
 
-div.text-container div ul {
+div.flex-header-text-container div ul {
   display: flex;
   gap: 6em;
   text-shadow: var(--text-shadow);
@@ -146,7 +150,7 @@ div.text-container div ul {
   font-weight: 200;
 }
 
-div.text-container div ul li:first-child {
+div.flex-header-text-container div ul li:first-child {
   background-color: rgb(144, 144, 238);
   width: 3.5em;
   height: 1.7em;
@@ -156,12 +160,12 @@ div.text-container div ul li:first-child {
   font-weight: 500;
 }
 
-div.text-container div ul li a {
+div.flex-header-text-container div ul li a {
   margin-right: 1em;
   font-weight: 600;
 }
 
-.flex-button {
+.header-flex-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,20 +174,21 @@ div.text-container div ul li a {
   height: 15vh;
 }
 
-.flex-button div {
+.header-flex-button div {
   font-weight: 100;
   padding-top: 1.5vh;
   text-align: center;
-  background-color: #13121200;
-  border-radius: 30px;
   cursor: pointer;
 }
-.flex-button div i {
+.header-flex-button div i {
   padding-right: 0.5em;
   color: blue;
 }
+/* Header ends  */
 
-.flex-container {
+/*  Section title movies starts  */
+
+.flex-container-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,24 +197,26 @@ div.text-container div ul li a {
   height: 5vh;
 }
 
-div.flex-container h2 {
+div.flex-container-title h2 {
   font-size: 2rem;
   font-weight: 100;
   margin-right: 1em;
 }
 
-div.flex-container span {
+div.flex-container-title span {
   color: var(--h1-color);
   font-size: 0.8rem;
   border: rgb(129, 100, 255) solid 5px;
   background-color: rgb(129, 100, 255);
   cursor: pointer;
 }
-div.flex-container span i {
+div.flex-container-title span i {
   margin-right: 0.5em;
 }
+/* Section title movies ends  */
 
-.container-cards {
+/* Sections movies and tv-shows style start  */
+.container-movies {
   display: flex;
   flex-wrap: wrap;
   width: 95%;
@@ -217,7 +224,7 @@ div.flex-container span i {
   justify-content: space-between;
 }
 
-.movies-container {
+.flex-movies-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -229,11 +236,10 @@ div.flex-container span i {
   transform: scale(1, 1);
   transition: transform 2s;
 }
-.movies-container:hover {
+.flex-movies-container:hover {
   transform: scale(1.1, 1.1);
   transition: transform 1s;
   background-color: #11053d;
-  /* align-items: center; */
   z-index: 3;
   border: white solid 1px;
 }
@@ -258,7 +264,7 @@ div.flex-container span i {
   border-radius: 3px;
 }
 
-.image-info {
+.flex-card-box {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -266,37 +272,39 @@ div.flex-container span i {
   gap: 1em;
 }
 
-.image-info p {
+.flex-card-box p {
   font-weight: 600;
   margin-top: -4.5em;
 }
 
-.info-container {
+.flex-card-box-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0.5em;
 }
-.info-container span {
+.flex-card-box-details span {
   font-weight: 100;
   font-size: 0.9rem;
   opacity: 0.5;
   margin-top: -0.5em;
 }
 
-.info-container i {
+.flex-card-box-details i {
   font-size: 0.2rem;
   opacity: 0.5;
   padding: 0em 2em;
 }
 
-.info-container span:last-child {
+.flex-card-box-details span:last-child {
   font-size: 0.6em;
   border: white solid 1px;
   padding: 0.2em 0.2em;
   border-radius: 3px;
 }
+/* Section movies and tv-shows end  */
 
+/* Section tv-shows title starts  */
 .flex-container-tv {
   display: flex;
   width: 100%;
@@ -319,10 +327,67 @@ div.flex-container span i {
 .flex-container-tv i {
   margin-left: 0.5em;
 }
+/* Section tv-show title ends  */
 
+/* footer starts */
 footer {
   background-color: #150249;
   width: 100%;
   height: 50vh;
   margin-top: 5em;
 }
+/* footer ends  */
+
+/* Resposive starts  */
+
+@media (max-width: 360px) {
+  header nav ul {
+    display: none;
+  }
+  .flex-nav-container {
+    justify-content: flex-start;
+  }
+  div.container h1 {
+    font-size: 1.1rem;
+  }
+  .text-container {
+    height: 6vh;
+    width: 100%;
+  }
+  div.text-container div ul {
+    gap: 1em;
+  }
+  div.text-container p {
+    display: none;
+  }
+  .header-flex-button {
+    width: 35%;
+    gap: 0em;
+  }
+  .header-flex-button div {
+    font-size: 9px;
+  }
+  div.flex-container h2 {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-right: 1em;
+  }
+  .flex-container {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+  }
+  div.flex-container span {
+    font-size: 0.6rem;
+  }
+  .flex-movies-container {
+    width: 49%;
+  }
+  .flex-container-tv h2 {
+    font-size: 1.5rem;
+  }
+  div.flex-container span {
+    font-size: 0.6rem;
+  }
+}
+/* Resposive ends  */
