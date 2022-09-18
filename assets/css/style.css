@@ -200,6 +200,7 @@ header nav ul li:hover {
 
 .flex-container-title {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 5em;
@@ -383,7 +384,7 @@ footer {
     width: 49%;
   }
   .quality {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -420,7 +421,7 @@ footer {
   header nav ul {
     display: flex;
     gap: 1em;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .flex-nav-container {
     flex-direction: column;
@@ -436,7 +437,7 @@ footer {
     justify-content: space-between;
   }
   .quality {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -467,11 +468,6 @@ footer {
     font-size: 2.5rem;
   }
 
-  header nav ul {
-    display: flex;
-    gap: 2em;
-    font-size: 1rem;
-  }
   .flex-nav-container {
     flex-direction: row;
     gap: 2em;
